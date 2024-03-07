@@ -1,0 +1,87 @@
+@import '../../styles/_mixin.scss';
+
+.navbar {
+    background-color: map-get($colors, white);
+    color: map-get($colors, text);
+    font-family: $primaryFont;
+    box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, 0.08);
+
+    &_main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &_logobox {
+        &_logo {
+            width: 80px;
+        }
+    }
+
+    &_menu {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        a {
+            font-size: 14px;
+            font-weight: 600;
+            color: map-get($colors, text);
+        }
+
+        li {
+            &:last-child {
+                button {
+                    background-color: map-get($colors , primary);
+                    padding: 10px 25px;
+                    border-radius: 10px;
+                }
+
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .mobile-menu {
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: block;
+        font-size: 20px;
+        color: map-get($colors, text);
+        margin-right: 20px;
+        display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+        .mobile-menu {
+            display: block;
+        }
+
+        .navbar_menu {
+            display: none;
+
+        }
+
+        .navbar_menu.open {
+            display: flex;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30%;
+            height: 100%;
+            background-color: map-get($colors, white);
+            padding: 40px;
+            box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, 0.08);
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+        }
+
+        .navbar_menu li {
+            display: block;
+        }
+    }
+}

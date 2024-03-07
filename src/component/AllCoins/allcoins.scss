@@ -1,0 +1,46 @@
+@import '../../styles/_mixin.scss';
+
+.mainall {}
+
+.main_blocks {
+    margin: 50px 0;
+
+    .coindetails {
+
+        min-height: 100px;
+        padding: 10px;
+
+        .coinbox {
+            border: 1px solid rgb(176, 176, 176);
+            padding: 20px;
+            border-radius: 10px;
+
+            .box {
+                display: flex;
+                align-items: center;
+            }
+
+            .coinimage {
+                width: 30px;
+                height: 30px;
+                margin-right: 10px;
+
+                img {
+                    border-radius: 50%;
+                }
+            }
+
+            .coinprice {
+                font-size: 16px;
+                font-weight: 550;
+                padding: 10px 0;
+                height: 30px;
+                overflow: hidden;
+            }
+
+            .image {
+                height: 50px;
+            }
+        }
+    }
+}

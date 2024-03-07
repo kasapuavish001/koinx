@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+$colors: (
+    bg: #eff2f5,
+    primary: #0052fe,
+    Secondary: #0fba83,
+    White: #ffffff,
+    text: #1f1e42,
+    lighttext: #67717d
+);
+
+$primaryFont: 'Work Sans', sans-serif;
+$ptsans: 'PT Sans';
+
+$sm: 767px;
+$md: 992px;
+$lg: 1024px;
+$lgl: 1228px;
+$xl: 1441px;
+
+@mixin xl {
+    @media (min-width: #{$xl}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$lg}) {
+        @content;
+    }
+}
+
+@mixin desktop_small {
+    @media (max-width: #{$lgl}) {
+        @content;
+    }
+}
+
+@mixin small-desktop {
+    @media (max-width: #{$lg}) {
+        @content;
+    }
+}
+
+@mixin small {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media (max-width: #{$md}) {
+        @content;
+    }
+}
+
+@mixin from-tab {
+    @media (min-width: #{$sm}) {
+        @content;
+    }
+}
+
+@mixin till-large {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$sm}) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (max-width: 680px) {
+        @content;
+    }
+}
+
+@mixin xs {
+    @media (max-width: 540px) {
+        @content;
+    }
+}
+
+@mixin tiny {
+    @media (max-width: 425px) {
+        @content;
+    }
+}
+
+@mixin xl-tiny {
+    @media (max-width:375px) {
+        @content;
+    }
+}
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}

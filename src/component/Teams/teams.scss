@@ -1,0 +1,71 @@
+@import '../../styles/_mixin.scss';
+
+.team {
+    background-color: white;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+
+    &_title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    &_para {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    &_card {
+        background: rgba(67, 196, 243, 0.185);
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+        border-radius: 10px;
+        margin: 20px 0;
+
+        @include xs {
+            flex-direction: column;
+        }
+
+        &_imageblock {
+            width: 15%;
+
+            @include xs {
+                width: 50%;
+            }
+
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 10px;
+
+            }
+
+            .team_name {
+                font-size: 14px;
+                font-weight: 600;
+
+            }
+
+            .team_role {
+                font-size: 12px;
+                font-weight: 300;
+                padding: 5px 0;
+            }
+        }
+
+        &_details {
+            width: 90%;
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.4;
+            }
+        }
+    }
+}

@@ -1,0 +1,164 @@
+@import '../../styles/_mixin.scss';
+
+.main {
+    margin: 10px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+
+    &_subtitle {
+        font-size: 18px;
+        font-weight: 600;
+        color: rgba(45, 44, 44, 0.617);
+        margin: 20px 0;
+
+        .icon {
+            margin-left: 10px;
+        }
+    }
+
+    // &_block {
+    //     margin: 20px 0;
+    // }
+
+    &_box {
+        background-color: rgba(51, 197, 51, 0.27);
+        padding: 10px;
+        border-radius: 10px;
+        display: flex !important;
+        justify-content: space-between;
+        width: 95% !important;
+        margin: 0 10px;
+
+        .iconbox {
+            .icon {
+                padding: 10px;
+                background-color: green;
+                color: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &_textblock {
+        .bold {
+            font-size: 14px;
+            font-weight: 500;
+            padding-bottom: 10px;
+        }
+
+        .light {
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+
+    &_analyst {
+        display: flex;
+
+        .texts {
+            width: 30%;
+            display: flex;
+            justify-content: space-around;
+
+            p {
+                background-color: rgba(0, 128, 0, 0.09);
+                padding: 30px;
+                border-radius: 50%;
+                font-size: 28px;
+                font-weight: 500;
+                color: green;
+            }
+        }
+
+        .b {
+            width: 100%;
+        }
+
+        .graph {
+            display: flex;
+
+            .grp {
+                font-size: 14px;
+            }
+
+        }
+
+        .v {
+            display: flex;
+            margin-left: 10px;
+            width: 100%;
+        }
+
+        .grpinput {
+            width: 70%;
+            margin-right: 10px;
+        }
+
+
+
+        .grpinput[type="range"] {
+            -webkit-appearance: none;
+            appearance: none;
+            background: transparent;
+            cursor: pointer;
+            width: 70%;
+        }
+
+        .t[type="range"] {
+            -webkit-appearance: none;
+            appearance: none;
+            background: transparent;
+            cursor: pointer;
+            width: 30%;
+        }
+
+        .th[type="range"] {
+            -webkit-appearance: none;
+            appearance: none;
+            background: transparent;
+            cursor: pointer;
+            width: 50%;
+        }
+
+        .grpinput[type="range"]::-webkit-slider-runnable-track {
+            background: green;
+            border-radius: 0.5rem;
+            height: 5px;
+            z-index: 0;
+        }
+
+        .t[type="range"]::-webkit-slider-runnable-track {
+            background: rgb(98, 101, 98);
+            border-radius: 0.5rem;
+            height: 5px;
+            z-index: 0;
+        }
+
+        .th[type="range"]::-webkit-slider-runnable-track {
+            background: rgb(172, 76, 13);
+            border-radius: 0.5rem;
+            height: 5px;
+            z-index: 0;
+        }
+
+        .grpinput[type="range"]::-webkit-slider-thumb {
+            display: none;
+        }
+    }
+}
+
+.slick-arrow {
+    background-color: #00000049;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+
+    &:hover {
+        background-color: #00000049;
+        color: white;
+    }
+}
