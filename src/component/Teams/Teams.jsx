@@ -17,6 +17,7 @@ const Teams = () => {
                     <p className="team_name">Elina Williams</p>
                     <p className="team_role">Designation here</p>
                 </div>
+
                 <div className="team_card_details">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quos laboriosam officiis aut fugiat cum in dolores expedita possimus sint! Atque est totam sunt, aperiam mollitia inventore facere veniam temporibus voluptate, quos aut dicta ad sed dolorum enim accusantium. Asperiores expedita magnam quos enim, neque mollitia modi sunt natus nemo!
